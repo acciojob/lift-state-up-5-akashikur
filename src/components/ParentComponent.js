@@ -12,7 +12,7 @@ function ParentComponent() {
     <div>
       <h1>Parent Component</h1>
       {isLoggedIn ? (
-        <p>Welcome, you are logged in!</p>
+        <p>you are logged in!</p>
       ) : (
         <ChildComponent onLogin={handleLogin} />
       )}

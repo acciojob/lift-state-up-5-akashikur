@@ -6,14 +6,12 @@ function ChildComponent({ onLogin }) {
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
-    if (name === "username") setUsername(value);
-    if (name === "password") setPassword(value);
+    setUsername(name);
+    setPassword(value);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Here you might want to add actual authentication logic.
-    // For simplicity, let's assume successful login for any input.
     onLogin();
   };
 
